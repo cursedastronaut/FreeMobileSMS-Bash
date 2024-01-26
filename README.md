@@ -17,7 +17,9 @@ Veuillez préciser votre propre identifiant d'utilisateur, et votre mot de passe
 dans les fichiers `userid.key` (Identifiant d'utilisateur),
 et `password.key` (Mot de passe).
 
-Editez la première ligne du fichier `sms.sh` pour vous envoyez ce que vous souhaitez. Note: Sa syntaxe doit être en ASCII, puisque CURL ne l'auto-convertira pas pour vous, et ce script ne le fera pas non plus.
+Editez la première ligne du fichier `sms.sh` pour vous envoyez ce que vous souhaitez.
+
+Note: **La syntaxe du message doit être en ASCII**, puisque CURL ne l'auto-convertira pas pour vous, et ce script ne le fera pas non plus.
 
 
 ### Comment le lancer
@@ -33,8 +35,10 @@ Pour le lancer, exécutez simplement:
 Please precise your own User ID, and password in the files `userid.key` (User ID),
 and `password.key` (Password).
 
-Edit the top of the `sms.sh` file to send whatever you want. Keep in mind the message must only be ASCII-supported characters, as neither 
-CURL or this script will auto-convert it.
+Edit the top of the `sms.sh` file to send whatever you want.
+
+Keep in mind **the message must only be ASCII-supported characters**,
+as neither CURL or this script will auto-convert it.
 
 
 ### How to run
