@@ -30,4 +30,4 @@ USER=$(cat userid.key)
 
 FINAL_MSG=$(urlencode "$MESSAGE")
 
-$CURL -k -X POST "https://smsapi.free-mobile.fr/sendmsg?user=$USER&pass=$PASS&msg=$FINAL_MSG"
+$CURL -k -X POST "$URL?user=$USER&pass=$PASS&msg=$FINAL_MSG"
