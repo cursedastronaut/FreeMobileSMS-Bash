@@ -1,5 +1,11 @@
 # SMS Free API
 Send an SMS to yourself with this bash file, by Galaad Martineaux.
+Permet de s'envoyer un SMS avec ce fichier bash, par Galaad Martineaux.
+
+Works only with **Free Mobile** (a french phone operator). Free Mobile's
+API only allows sending messages to self.
+Ne fonctionne qu'avec **Free Mobile**. L'API de Free Mobile ne permet
+pas d'envoyer un SMS à autrui.
 
 ## Summary / Sommaire
 
