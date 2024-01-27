@@ -1,3 +1,6 @@
+#Old stuff
 old/
 #Keys (User and password)
 *.key
+#Testing script with private keys as argument
+test.sh
