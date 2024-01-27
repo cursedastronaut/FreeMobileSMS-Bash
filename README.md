@@ -1,55 +1,45 @@
 # SMS Free API
-Send an SMS to yourself with this bash file, by Galaad Martineaux.
-Permet de s'envoyer un SMS avec ce fichier bash, par Galaad Martineaux.
-
-Works only with **Free Mobile** (a french phone operator). Free Mobile's
-API only allows sending messages to self.
-Ne fonctionne qu'avec **Free Mobile**. L'API de Free Mobile ne permet
-pas d'envoyer un SMS à autrui.
 
 ## Summary / Sommaire
 
 - Français
-	- Avant de l'utiliser
+	- Qu'est-ce ?
 	- Comment le lancer
 - Anglais
-	- Before using it
+	- What is it ?
 	- How to run
 
 ## Français
+### Qu'est-ce ?
+Permet de s'envoyer un SMS avec ce fichier bash, par Galaad Martineaux.
 
-### Avant de l'utiliser
-Veuillez préciser votre propre identifiant d'utilisateur, et votre mot de passe
-dans les fichiers `userid.key` (Identifiant d'utilisateur),
-et `password.key` (Mot de passe).
-
-Editez la première ligne du fichier `sms.sh` pour vous envoyez ce que vous souhaitez.
-
-Note: **La syntaxe du message doit être en ASCII**, puisque CURL ne l'auto-convertira pas pour vous, et ce script ne le fera pas non plus.
-
+Ne fonctionne qu'avec **Free Mobile**. L'API de Free Mobile ne permet
+pas d'envoyer un SMS à autrui.
 
 ### Comment le lancer
 Pour le lancer, exécutez simplement:
 ```sh
-./sms.sh
+./sms.sh --message [message] --userid [identifiant] --password [mot_de_passe]
 ```
+Note: **La syntaxe du message doit être en ASCII**, puisque CURL ne
+l'auto-convertira pas pour vous, et ce script ne le fera pas non plus.
 
 
 ## Anglais
 
-### Before using it
-Please precise your own User ID, and password in the files `userid.key` (User ID),
-and `password.key` (Password).
+### What is it ?
+Send an SMS to yourself with this bash file, by Galaad Martineaux.
 
-Edit the top of the `sms.sh` file to send whatever you want.
 
-Keep in mind **the message must only be ASCII-supported characters**,
-as neither CURL or this script will auto-convert it.
+Works only with **Free Mobile** (a french phone operator). Free Mobile's
+API only allows sending messages to self.
 
 
 ### How to run
 To run it, simply run:
 ```sh
-./sms.sh
+./sms.sh --message [message] --userid [user_id] --password [password]
 ```
+Keep in mind **the message must only be ASCII-supported characters**,
+as neither CURL or this script will auto-convert it.
 
